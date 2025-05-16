@@ -1,0 +1,47 @@
+.navdivinner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #abada9;
+}
+.navdivinnerlogolist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navdivinnerlist ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navdivinnerlogo{
+    background-color: aquamarine;
+    /* margin: 0 40px; */
+    margin-right: 50px;
+
+}
+.navdivinnerlist ul li{
+    color: white;
+    padding: 10px;
+}
+.navdivinnerauth div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navdivinnerauth div li{
+    color: white;
+}
+.navdivinnerauthlogin{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+.navdivinnerauthsignup{
+    background-color: #03795b;
+    border-radius: 10px;
+    padding: 10px 20px;
+}

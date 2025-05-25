@@ -77,67 +77,67 @@
 
 
 
-// import { useState, useEffect } from 'react';
-// import './ImageSlider.css';
+import { useState, useEffect } from 'react';
+import './ImageSlider.css';
 
-// const ImageSlider = ({ images }) => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-// //   useEffect(() => {
-// //     if (images?.length > 0) {
-// //       const timer = setInterval(() => {
-// //         goToNext();
-// //       }, 5000);
-// //       return () => clearInterval(timer);
-// //     }
-// //   }, [currentIndex, images]);
+const ImageSlider = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+//   useEffect(() => {
+//     if (images?.length > 0) {
+//       const timer = setInterval(() => {
+//         goToNext(); 
+//       }, 5000);
+//       return () => clearInterval(timer);
+//     }
+//   }, [currentIndex, images]);
 
-//   const goToPrevious = () => {
-//     const isFirstImage = currentIndex === 0;
-//     const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
-//     setCurrentIndex(newIndex);
-//   };
+  const goToPrevious = () => {
+    const isFirstImage = currentIndex === 0;
+    const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
 
-//   const goToNext = () => {
-//     const isLastImage = currentIndex === images.length - 1;
-//     const newIndex = isLastImage ? 0 : currentIndex + 1;
-//     setCurrentIndex(newIndex);
-//   };
+  const goToNext = () => {
+    const isLastImage = currentIndex === images.length - 1;
+    const newIndex = isLastImage ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
-//   const goToSlide = (index) => {
-//     setCurrentIndex(index);
-//   };
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
 
-//   if (!images || images.length === 0) {
-//     return <div>No images to display</div>;
-//   }
+  if (!images || images.length === 0) {
+    return <div>No images to display</div>;
+  }
 
-//   return (
-//     <div className="slider-container">
-//       <div className="slider">
-//         <div className="slide" style={{ backgroundImage: `url(${images[currentIndex]})` }} />
+  return (
+    <div className="slider-container">
+      <div className="slider">
+        <div className="slide" style={{ backgroundImage: `url(${images[currentIndex]})` }} />
         
-//         <button className="arrow-button left-arrow" onClick={goToPrevious}>
-//           ❰
-//         </button>
-//         <button className="arrow-button right-arrow" onClick={goToNext}>
-//           ❱
-//         </button>
+        <button className="arrow-button left-arrow" onClick={goToPrevious}>
+          ❰
+        </button>
+        <button className="arrow-button right-arrow" onClick={goToNext}>
+          ❱
+        </button>
         
-//         <div className="dots-container">
-//           {images.map((_, index) => (
-//             <div
-//               key={index}
-//               className={`dot ${index === currentIndex ? 'active-dot' : ''}`}
-//               onClick={() => goToSlide(index)}
-//             />
-//           ))}
-//         </div>
-//       </div>
-//     </div> 
-//   );
-// };
+        <div className="dots-container">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${index === currentIndex ? 'active-dot' : ''}`}
+              onClick={() => goToSlide(index)}
+            />
+          ))}
+        </div>
+      </div>
+    </div> 
+  );
+};
 
-// export default ImageSlider;
+export default ImageSlider;
 
 
 

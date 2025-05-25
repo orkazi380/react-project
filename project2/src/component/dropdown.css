@@ -1,0 +1,23 @@
+.div1{
+    background-color: rgb(255, 102, 0);
+    width: 500px;
+    padding: 10px;
+    border-radius: 25px;
+    margin:10px auto;
+    user-select: none;
+}
+.div3{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.div3 span{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+.div2{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}

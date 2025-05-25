@@ -1,0 +1,15 @@
+.maincolor{
+    width: 100%;
+    height: 500px;
+}
+.maincolor input{
+    padding: 1px;
+    width: 100px;
+}
+.active{
+    background-color: #ff0000;
+    color: yellow;
+}
+.inactive{
+    background-color: #fff;
+}
